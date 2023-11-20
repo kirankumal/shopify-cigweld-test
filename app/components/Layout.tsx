@@ -13,6 +13,7 @@ import {
   PredictiveSearchForm,
   PredictiveSearchResults,
 } from '~/components/Search';
+import {SideBar} from './SideNavbar';
 
 export type LayoutProps = {
   cart: Promise<CartApiQueryFragment | null>;
@@ -33,9 +34,17 @@ export function Layout({
     <>
       <CartAside cart={cart} />
       <SearchAside />
-      <MobileMenuAside menu={header.menu} shop={header.shop} />
+      <MobileMenuAside menu={header?.menu} shop={header.shop} />
+
       <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />
-      <main>{children}</main>
+      <main>
+        <section className="grid grid-cols-12 gap-x-4">
+          <div className="col-span-2">
+            <SideBar />
+          </div>
+          <div className="">{children}</div>
+        </section>
+      </main>
       <Suspense>
         <Await resolve={footer}>
           {(footer) => <Footer menu={footer.menu} shop={header.shop} />}
