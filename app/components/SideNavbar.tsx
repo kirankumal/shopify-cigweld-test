@@ -174,10 +174,10 @@ export function SideBar() {
                                         to={`/${menuItem.slug}/${subItem.slug}`}
                                         className={({isActive, isPending}) =>
                                           isActive
-                                            ? 'nav__item nav__item--active'
+                                            ? 'nav__item nav__item--active !pl-8'
                                             : isPending
                                             ? 'pending'
-                                            : 'nav__item'
+                                            : 'nav__item !pl-8'
                                         }
                                       >
                                         <figure>{subItem.icon}</figure>

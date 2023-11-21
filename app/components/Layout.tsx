@@ -32,10 +32,6 @@ export function Layout({
 }: LayoutProps) {
   return (
     <>
-      <CartAside cart={cart} />
-      <SearchAside />
-      <MobileMenuAside menu={header?.menu} shop={header.shop} />
-
       <Header header={header} cart={cart} isLoggedIn={isLoggedIn} />
       <main>
         <section className="grid grid-cols-12 gap-x-4">
@@ -45,11 +41,14 @@ export function Layout({
           <div className="">{children}</div>
         </section>
       </main>
-      <Suspense>
+      <CartAside cart={cart} />
+      <SearchAside />
+      <MobileMenuAside menu={header?.menu} shop={header.shop} />
+      {/* <Suspense>
         <Await resolve={footer}>
           {(footer) => <Footer menu={footer.menu} shop={header.shop} />}
         </Await>
-      </Suspense>
+      </Suspense> */}
     </>
   );
 }

@@ -1,3 +1,3 @@
-export function OrdersPage() {
-  return <h1 className="text-red-600">Orders page</h1>;
+export default function OrdersPage() {
+  return <h1 className="">Orders page</h1>;
 }
