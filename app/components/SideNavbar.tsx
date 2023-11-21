@@ -1,6 +1,5 @@
 import {Disclosure, Transition} from '@headlessui/react';
 import {NavLink} from '@remix-run/react';
-import {useState} from 'react';
 import {RxChevronDown} from 'react-icons/rx';
 import {TfiDashboard} from 'react-icons/tfi';
 import {TbFileInvoice} from 'react-icons/tb';
