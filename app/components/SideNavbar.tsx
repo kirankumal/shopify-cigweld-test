@@ -176,7 +176,7 @@ export function SideBar() {
                                           isActive
                                             ? 'nav__item nav__item--active !pl-8'
                                             : isPending
-                                            ? 'pending'
+                                            ? 'nav__item nav__item--active !pl-8'
                                             : 'nav__item !pl-8'
                                         }
                                       >
@@ -202,7 +202,7 @@ export function SideBar() {
                       isActive
                         ? 'nav__item nav__item--active'
                         : isPending
-                        ? 'pending'
+                        ? 'nav__item nav__item--active'
                         : 'nav__item'
                     }
                   >
