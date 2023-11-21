@@ -7,10 +7,10 @@
 
 @layer utilities {
 .nav__item {
-    @apply flex space-x-4 items-center px-3 py-2 hover:bg-blue-100 hover:text-blue-500 duration-300 relative;
+    @apply flex space-x-4 items-center px-3 py-2 hover:bg-blue-100 hover:text-blue-500 duration-300 relative font-bold text-base;
 }
 .nav__item--active {
-    @apply bg-blue-100 relative text-blue-500 before:content-[''] before:absolute before:left-0 before:top-0 before:bg-blue-500 before:h-full before:w-1;
+    @apply bg-blue-100 relative text-blue-500 before:content-[''] before:absolute before:left-0 before:top-0 before:bg-blue-500 before:h-full before:w-1 font-bold text-base;
 }
 .nav__disclosure{
     @apply flex justify-between items-center px-3 py-2 hover:bg-blue-100 hover:text-blue-500 duration-300 truncate;

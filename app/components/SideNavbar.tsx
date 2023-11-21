@@ -132,7 +132,7 @@ const sideBarData: SideBarData = {
 
 export function SideBar() {
   return (
-    <div className="">
+    <div className="bg-slate-100">
       <nav>
         <ul>
           {sideBarData.menu.length > 0 &&
@@ -145,7 +145,7 @@ export function SideBar() {
                         <>
                           <Disclosure.Button className="w-full">
                             <div className="nav__disclosure">
-                              <div className="flex space-x-4 items-center">
+                              <div className="flex space-x-4 items-center font-bold text-base">
                                 {menuItem.icon}
                                 <h4 className="">{menuItem.title}</h4>
                               </div>
@@ -175,8 +175,8 @@ export function SideBar() {
                                           isActive
                                             ? 'nav__item nav__item--active !pl-8'
                                             : isPending
-                                            ? 'nav__item nav__item--active !pl-8'
-                                            : 'nav__item !pl-8'
+                                            ? 'nav__item nav__item--active !pl-8 '
+                                            : 'nav__item !pl-8 !text-gray-500'
                                         }
                                       >
                                         <figure>{subItem.icon}</figure>
